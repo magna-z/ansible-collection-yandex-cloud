@@ -1,0 +1,11 @@
+---
+namespace: yandex
+name: cloud
+version: "0.1.0"
+description: Yandex Cloud plugins collection for Ansible.
+tags: [yandex, cloud]
+license: [MIT]
+repository: https://github.com/magna-z/ansible-collection-yandex-cloud
+readme: README.md
+authors:
+  - Maxim Zalysin <zalysin.m@gmail.com>
