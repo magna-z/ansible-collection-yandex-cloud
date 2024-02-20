@@ -453,9 +453,25 @@ DOCUMENTATION = """
         - An IAM token is a unique sequence of characters issued to a user after authentication.
         - The following regular expression describes a token: C(t1\.[A-Z0-9a-z_-]+[=]{0,2}\.[A-Z0-9a-z_-]{86}[=]{0,2})
     service_account_key:
-      type: str
+      type: dict
       description:
         - A Service Account Key.
+      suboptions:
+        id:
+          type: str
+          description:
+            - Key object ID
+            - "id" field from service account key JSON
+        service_account_id:
+          type: str
+          description:
+            - Service account ID
+            - "service_account_id" field from service account key JSON
+        private_key:
+          type: str
+          description:
+            - Private key
+            - "private_key" field from service account key JSON
     token:
       type: str
       description:

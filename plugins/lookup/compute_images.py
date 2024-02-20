@@ -22,8 +22,8 @@ DOCUMENTATION = """
       type: string
       description: 
     service_account_key:
-      type: string
-      description: 
+      type: dict
+      description: dictionary with contents of service account key JSON
     token:
       type: string
       description: 
