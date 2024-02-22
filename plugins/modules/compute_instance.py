@@ -938,7 +938,7 @@ def main():
             maintenance_grace_period=dict(type='int'),
             iam_token=dict(type='str'),
             token=dict(type='str'),
-            service_account_key=dict(type='str'),
+            service_account_key=dict(type='dict'),
         ),
         required_one_of=[('iam_token', 'token', 'service_account_key')],
         required_if=[
